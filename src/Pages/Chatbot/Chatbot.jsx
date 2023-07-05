@@ -20,7 +20,7 @@ function Chatbot() {
       console.log(User);
       setChatResult('');
       const {chatbotQues} = botQuestion;
-      const response = await fetch('https://stackoverflow-clone-server-v61p.onrender.com:7001/chatbot/askchatbot', {
+      const response = await fetch('https://stackoverflow-clone-server-v61p.onrender.com/chatbot/askchatbot', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
