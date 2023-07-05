@@ -1,0 +1,68 @@
+.ask-chatbot {
+    min-height: 80vh;
+    background-color: #f1f2f3;
+  }
+  
+  .ask-chatbot-container {
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    max-width: 1200px;
+  }
+  
+  .ask-chatbot-container h1 {
+    padding: 80px 0px 20px 0px;
+  }
+  
+  .ask-chatbot-container form .ask-chatbot-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+      0 1px 4px rgb(0 0 0 / 10%);
+  }
+  
+  .ask-chatbotForm-container label h4 {
+    margin-bottom: 0%;
+  }
+  
+  .ask-chatbotForm-container label p {
+    margin: 0%;
+    font-size: 13px;
+    padding: 3px 0px;
+  }
+  
+  .ask-chatbotForm-container label input {
+    padding: 10px;
+    border: solid 1px #0000003e;
+    font-family: "Roboto", sans-serif;
+    width: calc(100% - 20px);
+    resize: none;
+  }
+  
+  .chatbot-review-btn {
+    margin: 50px 0px;
+    padding: 10px;
+    background-color: #009dff;
+    border: solid 1px #009dff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .chatbot-review-btn:hover {
+    background-color: #0086d8;
+  }
+  .ask-chatbotResult-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    min-height: 40vh;
+    border-color: black;
+    border-radius: 3px;
+    border-style: solid;
+  }
+  .ask-chatbotResult-para{
+    width: 70%;
+    height: 100%;
+    line-height: 40px;
+  }

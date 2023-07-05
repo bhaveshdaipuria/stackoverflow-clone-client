@@ -1,0 +1,9 @@
+.alert-container{
+    position: relative;
+    top: 38px;
+    text-align: center;
+    background-color: blanchedalmond;
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+}
