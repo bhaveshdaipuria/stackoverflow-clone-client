@@ -1,29 +1,52 @@
-.otp-container{
-    position: relative;
-    top: 200px;
-    display: flex;
-    justify-content: center;
+.otp-container {
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: center;
 }
-.otp-second-container{
-    padding: 60px;
-    border-radius: 15px;
-    border-color: aqua;
-    border-width: 4px;
-    border-style: solid;
+.otp-second-container {
+  padding: 60px;
 }
-.otp-generate-button{
-    margin-bottom: 60px;
-    margin-left: 40px;
-    border-radius: 5px;
-    height: 40px;
-    background-color: grey;
-    color: white;
+.otp-generate-button {
+  margin-bottom: 60px;
+  margin-left: 40px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.otp-submit-button{
-    margin-top: 30px;
-    margin-left: 45px;
-    height: 40px;
-    background-color: grey;
-    color: white;
-    border-radius: 5px;
+.otp-submit-button {
+  color: #fff;
+  background-color: #4caf50;
+  margin-top: 30px;
+  margin-left: 45px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+.otp-generate-button:hover,
+.otp-submit-button:hover {
+  background-color: rgb(14, 8, 9);
+}
+
+input {
+  border-radius: 4px;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
