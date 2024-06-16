@@ -78,33 +78,27 @@ function ChatOTP() {
 
   return (
     <>
-      <OTPAlert alertContent={alertMessage} />
-      <div className="otp-container">
-        <div className="otp-second-container">
-          <input
+      <OTPAlert alertContent={alertMessage}></OTPAlert>
+      <section className="auth-section">
+        <div className="auth-container-2">
+          <button
             type="submit"
-            value="Generate OTP"
             className="otp-generate-button"
             onClick={sendOTP}
-          />
+          >
+            Generate
+          </button>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="otp">Enter OTP: </label>
-            <input
-              type="number"
-              name="otp"
-              className="otp-input"
-              onChange={onChange}
-            />
-            <div className="otp-submit-container">
-              <input
-                type="submit"
-                value="Submit OTP"
-                className="otp-submit-button"
-              />
-            </div>
+            <label htmlFor="otp">
+              <h4>Enter OTP</h4>
+              <input type="number" name="otp" id="otp" onChange={onChange} />
+            </label>
+            <button type="submit" className="auth-btn">
+              Validate
+            </button>
           </form>
         </div>
-      </div>
+      </section>
     </>
   );
 }

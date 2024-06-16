@@ -1,52 +1,104 @@
-.otp-container {
-  position: relative;
-  top: 200px;
+.auth-section {
+  min-height: 100vh;
+  margin: 0% auto;
+  background-color: #f1f2f3;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.otp-second-container {
-  padding: 60px;
+
+.auth-container-2 {
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.otp-generate-button {
-  margin-bottom: 60px;
-  margin-left: 40px;
-  background-color: #4caf50;
-  color: #fff;
+
+.auth-container-2 form {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+}
+
+.auth-container-2 form p {
+  word-wrap: break-word;
+}
+
+.auth-container-2 form label input {
   padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  width: calc(100% - 30px);
+  border: solid 1px #0000003e;
+  font-size: 13px;
 }
-.otp-submit-button {
-  color: #fff;
-  background-color: #4caf50;
-  margin-top: 30px;
-  margin-left: 45px;
-  height: 40px;
-  cursor: pointer;
+
+.auth-container-2 form label:nth-child(1) h4,
+.auth-container-2 form label:nth-child(2) h4,
+.auth-container-2 form label:nth-child(3) h4 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.auth-container-2 form label:nth-child(4) {
+  display: flex;
+}
+
+.auth-container-2 form label:nth-child(4) input {
+  width: 15%;
+  margin: 13px 0px;
+}
+
+.auth-btn {
+  margin-top: 10px;
+  padding: 10px 5px;
+  background-color: #009dff;
+  border: solid 1px #009dff;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.otp-generate-button:hover,
-.otp-submit-button:hover {
-  background-color: rgb(14, 8, 9);
+.auth-btn:hover {
+  background-color: #018ce3;
 }
 
-input {
-  border-radius: 4px;
+@media screen and (max-width: 820px) {
+  .auth-container-1 {
+    display: none;
+  }
 }
-
-label {
-  font-family: "Courier New", Courier, monospace;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.otp-generate-button {
+  margin-top: 10px;
+  padding: 10px 5px;
+  background-color: #009dff;
+  border: solid 1px #009dff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.otp-generate-button:hover {
+  background-color: #018ce3;
 }
