@@ -52,16 +52,19 @@ function ChatOTP() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (User) {
-      const response = await fetch("http://localhost:7001/chatbot/verifyotp", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          enteredOTP: enteredOTP,
-          user: JSON.parse(localStorage.getItem("Profile")).result._id,
-        }),
-      });
+      const response = await fetch(
+        "https://stackoverflow-clone-server-gds6.onrender.com/chatbot/verifyotp",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            enteredOTP: enteredOTP,
+            user: JSON.parse(localStorage.getItem("Profile")).result._id,
+          }),
+        }
+      );
       const json = await response.json();
       if (json.success) {
         setAlertMessage("OTP Matched Successfully.");
