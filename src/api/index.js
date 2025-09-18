@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://stackoverflow-clone-server-gds6.onrender.com",
+  baseURL: "https://stackoverflow-clone-server-neon.vercel.app",
 });
 
 API.interceptors.request.use((req) => {
