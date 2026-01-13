@@ -23,7 +23,7 @@ function ChatOTP() {
     if (User) {
       setAlertMessage("Please Wait...");
       const response = await fetch(
-        "https://stackoverflow-clone-server-gds6.onrender.com/chatbot/chatotp/",
+        "https://stackoverflow-clone-server-neon.vercel.app/chatbot/chatotp/",
         {
           method: "POST",
           headers: {
@@ -53,7 +53,7 @@ function ChatOTP() {
     e.preventDefault();
     if (User) {
       const response = await fetch(
-        "https://stackoverflow-clone-server-gds6.onrender.com/chatbot/verifyotp",
+        "https://stackoverflow-clone-server-neon.vercel.app/chatbot/verifyotp",
         {
           method: "POST",
           headers: {

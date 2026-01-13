@@ -19,7 +19,7 @@ function Chatbot() {
       setChatResult("");
       const { chatbotQues } = botQuestion;
       const response = await fetch(
-        "https://stackoverflow-clone-server-gds6.onrender.com/chatbot/askchatbot",
+        "https://stackoverflow-clone-server-neon.vercel.app/chatbot/askchatbot",
         {
           method: "POST",
           headers: {
